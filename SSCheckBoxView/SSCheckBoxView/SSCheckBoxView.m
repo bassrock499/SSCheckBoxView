@@ -101,9 +101,11 @@ static const CGFloat kHeight = 36.0f;
     return enabled;
 }
 
-- (void) setText:(NSString *)text
+- (void) setText:(NSString *)text withColor:(UIColor *)color
 {
     [textLabel setText:text];
+    [textLabel setTextColor:color];
+    [textLabel setShadowColor:[UIColor clearColor]];
 }
 
 - (void) setChecked:(BOOL)isChecked
